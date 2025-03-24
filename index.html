@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Scripts and Styles -->
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+    <script src="./matrixrain.js" defer></script>
+
+    <!-- Source Code Pro Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <title>Mission Impossible: The Source Code</title>
+</head>
+<body>
+    <canvas></canvas>
+    <section id="section-0">
+        <button id="entry-button" class="cybr-btn" onclick="show_terminal()">
+            DIFFUSE THE BOMB<span aria-hidden>_</span>
+            <span aria-hidden class="cybr-btn__glitch">DIFFUSE THE BOMB_</span>
+            <span aria-hidden class="cybr-btn__tag">Q-01</span>
+        </button>
+    </section>
+    <section id="section-1">
+        <div class="terminal">
+            <p class="prompt">
+                <span class="secondary">C:\ >>></span> <u>diffuse-bomb.exe</u>
+            </p>
+            <span id="cursor">▇</span>
+        </div>
+    </section>
+    <section id="section-2">
+        <div id="hint">Psst... move the cursor around to reveal something interesting!!!</div>
+        <div class="cards">
+            <div ondrop="drop_over(event)" ondragover="drag_over(event)"> </div>
+            <div ondrop="drop_over(event)" ondragover="drag_over(event)"> </div>
+            <div ondrop="drop_over(event)" ondragover="drag_over(event)"> </div>
+            <div ondrop="drop_over(event)" ondragover="drag_over(event)"> </div>
+            <button onclick="reset_values()" id="reset-values">↺ </button>
+        </div>
+        <button id="submit-code" class="cybr-btn">
+            SUBMIT CODE<span aria-hidden>_</span>
+            <span aria-hidden class="cybr-btn__glitch">SUBMIT CODE_</span>
+            <span aria-hidden class="cybr-btn__tag">Q-01</span>
+        </button>
+        <div id="pile">
+            <p ondragstart="drag_started(event)" id="drele-0" class="drag" draggable="true">0</p>
+            <p ondragstart="drag_started(event)" id="drele-1" class="drag" draggable="true">1</p>
+            <p ondragstart="drag_started(event)" id="drele-2" class="drag" draggable="true">2</p>
+            <p ondragstart="drag_started(event)" id="drele-3" class="drag" draggable="true">3</p>
+            <p ondragstart="drag_started(event)" id="drele-4" class="drag" draggable="true">4</p>
+            <p ondragstart="drag_started(event)" id="drele-5" class="drag" draggable="true">5</p>
+            <p ondragstart="drag_started(event)" id="drele-6" class="drag" draggable="true">6</p>
+            <p ondragstart="drag_started(event)" id="drele-7" class="drag" draggable="true">7</p>
+            <p ondragstart="drag_started(event)" id="drele-8" class="drag" draggable="true">8</p>
+            <p ondragstart="drag_started(event)" id="drele-9" class="drag" draggable="true">9</p>
+        </div>
+    </section>
+    <section id="section-3">
+    </section>
+    <section id="section-4">
+
+    </section>
+    <section id="section-5">
+
+    </section>
+</body>
+</html>
