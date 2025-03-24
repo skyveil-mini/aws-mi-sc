@@ -66,6 +66,6 @@ const show_terminal = () => {
         let part1 = document.getElementById('section-1');
 
         part1.style.display = 'none';
-        setTimeout(() => part2.style.display = 'flex', 1000);
+        // setTimeout(() => part2.style.display = 'flex', 1000);
     }, 6000);
 }
