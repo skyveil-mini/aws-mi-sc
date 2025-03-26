@@ -341,3 +341,7 @@ canvas {
 #pile > *:hover {
     filter: blur(0);
 }
+
+#error-invalid {
+    opacity: 0;
+}

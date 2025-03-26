@@ -42,11 +42,12 @@
             <div ondrop="drop_over(event)" ondragover="drag_over(event)"> </div>
             <button onclick="reset_values()" id="reset-values">↺ </button>
         </div>
-        <button id="submit-code" class="cybr-btn">
+        <button id="submit-code" class="cybr-btn" onclick="handle_code()">
             SUBMIT CODE<span aria-hidden>_</span>
             <span aria-hidden class="cybr-btn__glitch">SUBMIT CODE_</span>
             <span aria-hidden class="cybr-btn__tag">Q-01</span>
         </button>
+        <p id="error-invalid" style="color: red">Error!!! Invalid Code</p>
         <div id="pile">
             <p ondragstart="drag_started(event)" id="drele-0" class="drag" draggable="true">0</p>
             <p ondragstart="drag_started(event)" id="drele-1" class="drag" draggable="true">1</p>

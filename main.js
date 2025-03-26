@@ -74,3 +74,43 @@ const show_terminal = () => {
         }, 10000);
     }, 6000);
 };
+
+// Hash Functionality
+const handle_code = () => {
+    import('hashes.js');
+
+    let str = "";
+    let cards = document
+        .getElementsByClassName('cards')[0]
+        .querySelectorAll('div');
+    cards.forEach((val) => (str += val.innerHTML));
+
+
+    let errorEle = document.getElementById('error-invalid');
+    let keyframes = [
+        { transform: "translateX(0%)" },
+        { transform: "translateX(10%)" },
+        { transform: "translateX(-15%)", opacity: "1" },
+        { transform: "translateX(20%)" },
+        { transform: "translateX(-15%)" },
+        { transform: "translateX(10%)" },
+        { transform: "translateX(0%)" },
+    ];
+
+    if (str.length != 4) {
+        errorEle.animate(keyframes, {
+            fill: "both",
+            duration: 1,
+        })
+    }
+
+    let codes = {
+        "1234": "Yay you did it!!!"
+    };
+
+    if (codes[str]) {
+        errorEle.innerHTML = codes[str];
+    } else {
+        errorEle.innerHTML = "Alas the bomb is going to blast";
+    }
+};

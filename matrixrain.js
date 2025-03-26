@@ -8,7 +8,7 @@ canvas.height = window.innerHeight;
 
 // Setting up the letters
 let letters =
-    'ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZ';
+    'あいうえおかきくけこさしすせそはひふへほまみむめもやゆよなにぬねのわをアイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロ';
 letters = letters.split('');
 
 // Setting up the columns
